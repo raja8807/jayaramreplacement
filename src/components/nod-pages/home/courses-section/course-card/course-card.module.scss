@@ -1,0 +1,39 @@
+.course_card{
+    background-color: white;
+    margin: 20px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+border-radius: 5px;
+
+
+.course_img{
+img{
+    border-radius: 5px 5px 0 0;
+
+}
+}
+    p{
+        margin: 0;
+    }
+    
+    .course_details{
+       
+        padding: 10px;
+        
+        .head{
+            font-weight:800;
+            font-size: 18px;
+            margin: 10px 0px;
+            color: $color_red;
+        }
+
+        .detail{
+            // color: $color_orange;
+        }
+    }
+    
+    .control{
+        opacity: 0.9;
+        @include flecCenter;
+        padding: 10px;
+    }
+}

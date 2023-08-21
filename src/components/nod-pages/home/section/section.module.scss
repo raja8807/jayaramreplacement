@@ -1,0 +1,24 @@
+.section {
+  max-width: 100vw;
+  overflow: hidden;
+  
+  &:not(.banner){
+    min-height: calc(100vh - 90px);
+   
+  }
+
+  &.courses{
+    background-color: rgb(220, 220, 220);
+
+  }
+ 
+  // &.dark {
+  //   background-color: $color_dark;
+  // }
+  // &.darkest {
+  //   background-color: $color_darkest;
+  // }
+
+
+  
+}

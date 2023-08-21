@@ -1,0 +1,12 @@
+.custom_button{
+    padding: 4px 15px;
+    outline: none;
+    border: none;
+    background-color: $color_orange;
+    color: white;
+    border-radius: 5px;
+
+    &:hover{
+        background-color: $color_red;
+    }
+}
