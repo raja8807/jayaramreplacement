@@ -2,11 +2,11 @@
     padding: 4px 15px;
     outline: none;
     border: none;
-    background-color: $color_orange;
+    background-color: $color_primary;
     color: white;
-    border-radius: 5px;
+    border-radius: 2px;
 
     &:hover{
-        background-color: $color_red;
+        background-color: black;
     }
 }

@@ -1,62 +1,99 @@
 const { default: NodLogo } = require("../nod-ui/nod-logo/nod_logo");
-import { useState } from "react";
-import Nodbutton from "../nod-ui/nod-button/nod_button";
+import { useEffect, useState } from "react";
+
+
 import styles from "./header.module.scss";
 import HeaderDrawer from "./header-drawer/header_drawer";
-import { useRouter } from "next/router";
+
 import Link from "next/link";
-import { Container } from "react-bootstrap";
+
 import { HOME_SECTIONS } from "../nod-pages/home/constants";
-import { List } from "react-bootstrap-icons";
+import {
+
+  ArrowRight,
+  EnvelopeAtFill,
+  List,
+  TelephoneFill,
+} from "react-bootstrap-icons";
+import CustomContainer from "../ui/custom_container/custom_container";
 
 const NodHeader = (props) => {
   const { currentSection, setCurrentSection } = props;
 
-
   const [showDrawer, setShowDrawer] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   // const router = useRouter();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window) {
+        setScrolled(window.scrollY > 0);
+
+        console.log(window.scrollY);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <>
       <header className={styles.nod_header_wrap}>
-        <Container className={styles.nod_header}>
+        <div className={`${styles.header_top} ${scrolled && styles.hidden}`}>
+          <CustomContainer className={styles.wrapper}>
+            <div>
+              <div className={styles.left}>
+                <Link href='#resgister'>
+                Register With Us <ArrowRight/>
+                </Link>
+              </div>
+
+              <div className={styles.contact}>
+                <div>
+                  <TelephoneFill
+                    style={{ marginBottom: "4px", fontSize: "13px" }}
+                  />
+                  <p>+91 98765 43215</p>
+                </div>
+
+                |
+
+                <div>
+                  <EnvelopeAtFill
+                    style={{ marginBottom: "4px", fontSize: "16px" }}
+                  />
+                  <p>admin@jayaramplacement.online</p>
+                </div>
+              </div>
+            </div>
+          </CustomContainer>
+        </div>
+        <CustomContainer className={styles.nod_header}>
           <div className={styles.header_logo}>
             <NodLogo />
-            <p>Institute Name</p>
+            <p>Jaya Ram Placement</p>
           </div>
           <nav className={styles.nav}>
-            {/* <Link href="#" className={`${styles.nav_link} ${styles.active}`}>
-              Home
-            </Link>
-            <Link href="#" className={`${styles.nav_link} `}>
-              Home
-            </Link>
-            <Link href="#" className={`${styles.nav_link}`}>
-              Home
-            </Link> */}
-            
             {HOME_SECTIONS.map((section) => (
-            <Link
-              key={section.id}
-              href={`#${section.id}`}
-          
-         
-
-              className={`${styles.nav_link} ${currentSection?.includes(section.id) && styles.active}`}
-     
-            >
-              <p>{section.name}</p>
-            </Link>
-          ))}
+              <Link
+                key={section.id}
+                href={`#${section.id}`}
+                className={`${styles.nav_link} ${
+                  currentSection?.includes(section.id) && styles.active
+                }`}
+              >
+                <p>{section.name}</p>
+              </Link>
+            ))}
           </nav>
           <nav className={styles.menu_toogle}>
             <List
-            onClick={()=>{
-              setShowDrawer(true);
-            }}
+              onClick={() => {
+                setShowDrawer(true);
+              }}
             />
           </nav>
-        </Container>
+        </CustomContainer>
       </header>
       <HeaderDrawer
         show={showDrawer}

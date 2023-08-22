@@ -16,18 +16,18 @@ gap: 10px;
 
   a {
     text-decoration: none;
-    color: $color_orange;
+    color: black;
 
     &.active{
         p{
-            color: $color_red;
+            color: $color_primary;
             font-weight: 600;
         }
 
     }
     &:hover {
       p {
-        color: $color_red;
+        color: $color_primary;
         
         
       }
