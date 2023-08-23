@@ -1,6 +1,7 @@
 import { Col, Image, Row } from "react-bootstrap";
 import styles from "./who-are-we-section.module.scss";
 import CustomContainer from "@/components/ui/custom_container/custom_container";
+import AboutCollege from "./about-college-section/about_college_section";
 
 const WhoAreWeSection = () => {
   return (
@@ -30,25 +31,26 @@ const WhoAreWeSection = () => {
         </CustomContainer>
       </div>
 
+      <AboutCollege/>
+
       <div className={styles.about}>
         <CustomContainer>
+          
           <div className={styles.box}>
             <div className={styles.img} data-aos="flip-left">
-              <Image src="/images/sq.png" fluid alt="sq"/>
-            </div>
-
-            <div className={styles.right}>
-              <p className={styles.name} data-aos="fade-left">Jaya Ram</p>
-              <p data-aos="fade-left">auiefa oefaeiugfaoe f</p>
-              <p data-aos="fade-left">auiefa oefaeiugfaoe f</p>
-              <p data-aos="fade-left">auiefa oefaeiugfaoe f</p>
+              <Image src="/images/sq.png" fluid alt="sq" />
             </div>
 
             <div className={styles.details}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
-              dignissimos, rerum itaque odio impedit dicta doloremque beatae
-              accusamus eaque, perferendis sed libero quis assumenda, nulla
-              laudantium illo omnis dolorum iste!
+              <p className={styles.name} data-aos="fade-left">
+                Mr.JayaramKrishna
+              </p>
+
+              <p data-aos="fade-left">
+                Mr.JayaramKrishnan, who served in paramedical institutions over
+                three decades in teaching and he placed more than five thousand
+                students in various medical and paramedical departments.
+              </p>
             </div>
           </div>
         </CustomContainer>

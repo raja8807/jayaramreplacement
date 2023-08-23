@@ -6,7 +6,7 @@ import "aos/dist/aos.css";
 
 
 const Section = (props) => {
-  const { varient, children, heading ,inEffect='fade-in',id} = props;
+  const { varient, children, heading ,inEffect,id} = props;
 
   return (
     <section className={`home_section ${styles.section} ${varient && styles[varient]}`}

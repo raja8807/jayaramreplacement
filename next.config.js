@@ -6,6 +6,10 @@ const nextConfig = {
 
   optimizeFonts: false,
 
+  images : {
+    unoptimized:true
+  },
+
   sassOptions: {
     includePaths: [path.join(__dirname, 'src/styles/scss')],
     prependData:

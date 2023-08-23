@@ -53,7 +53,7 @@ const NodHeader = (props) => {
                   <TelephoneFill
                     style={{ marginBottom: "4px", fontSize: "13px" }}
                   />
-                  <p>+91 98765 43215</p>
+                  <p>+91 8248366954</p>
                 </div>
 
                 |
