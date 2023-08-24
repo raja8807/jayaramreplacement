@@ -3,21 +3,17 @@ import styles from "./course-card.module.scss";
 import CustomButton from "@/components/ui/custom-button/custom_button";
 import { ArrowRight } from "react-bootstrap-icons";
 
-const CourseCard = () => {
+const CourseCard = (props) => {
+  const { courseData } = props;
   return (
     <div className={styles.course_card}>
       <div className={styles.course_img}>
-        <Image src="/images/courses/course1.jpg" fluid alt="img"/>
+        <Image src={`/images/courses/${courseData.id}.jpg`} fluid alt="img" />
+        <div className={styles.overlay}>Register Now</div>
       </div>
-      <div>
-        <div className={styles.course_details}>
-          <p className={styles.head}>Lorem ipsum dolor sit.</p>
-          <p className={styles.detail}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
-            accusantium illo odit placeat totam aspernatur incidunt doloremque
-            nobis maiores iusto.
-          </p>
-        </div>
+      <div className={styles.course_details}>
+        <p className={styles.head}>{courseData.name}</p>
+        <p className={styles.detail}>{courseData.details}</p>
       </div>
       <div className={styles.control}>
         <CustomButton>

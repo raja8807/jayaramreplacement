@@ -26,6 +26,8 @@
       color: white;
     }
 
+    
+
     a {
       color: gray;
       margin: 6px 0;
@@ -90,8 +92,17 @@
     // background-color: red;
     p {
       margin: auto !important;
-      color: white;
+    //   color: $color_da_grey;
       text-align: center;
+
+      a{
+        color: $color_dark_grey;
+        text-decoration: none;
+
+        &:hover{
+            color: white;
+        }
+      }
     }
   }
 }

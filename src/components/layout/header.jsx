@@ -28,8 +28,6 @@ const NodHeader = (props) => {
     const handleScroll = () => {
       if (window) {
         setScrolled(window.scrollY > 0);
-
-        console.log(window.scrollY);
       }
     };
 
@@ -71,7 +69,7 @@ const NodHeader = (props) => {
         <CustomContainer className={styles.nod_header}>
           <div className={styles.header_logo}>
             <NodLogo />
-            <p>Jaya Ram Placement</p>
+            <p>U S Health Academy</p>
           </div>
           <nav className={styles.nav}>
             {HOME_SECTIONS.map((section) => (

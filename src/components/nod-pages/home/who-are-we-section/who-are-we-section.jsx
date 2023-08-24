@@ -2,6 +2,7 @@ import { Col, Image, Row } from "react-bootstrap";
 import styles from "./who-are-we-section.module.scss";
 import CustomContainer from "@/components/ui/custom_container/custom_container";
 import AboutCollege from "./about-college-section/about_college_section";
+import Link from "next/link";
 
 const WhoAreWeSection = () => {
   return (
@@ -10,20 +11,26 @@ const WhoAreWeSection = () => {
         <CustomContainer>
           <Row>
             <Col xs={12} md={6}>
-              <div className={styles.card} data-aos="fade-right">
-                <div className={styles.left}>5</div>
-                <div>
-                  <p className={styles.head}>Courses</p>
-                  <p className={styles.details}>We Currently offer 5 courses</p>
+              <Link href="#courses">
+                <div className={styles.card} data-aos="fade-right">
+                  <div className={styles.left}>5</div>
+                  <div>
+                    <p className={styles.head}>Courses</p>
+                    <p className={styles.details}>
+                      We currently offer 5 courses
+                    </p>
+                  </div>
                 </div>
-              </div>
+              </Link>
             </Col>
             <Col xs={12} md={6}>
               <div className={styles.card} data-aos="fade-left">
-                <div className={styles.left}>5</div>
+                <div className={styles.left}>2</div>
                 <div>
-                  <p className={styles.head}>Courses</p>
-                  <p className={styles.details}>We Currently offer 5 courses</p>
+                  <p className={styles.head}>Locations</p>
+                  <p className={styles.details}>
+                    We currently operate in 2 locations
+                  </p>
                 </div>
               </div>
             </Col>
@@ -31,11 +38,10 @@ const WhoAreWeSection = () => {
         </CustomContainer>
       </div>
 
-      <AboutCollege/>
+      <AboutCollege />
 
       <div className={styles.about}>
         <CustomContainer>
-          
           <div className={styles.box}>
             <div className={styles.img} data-aos="flip-left">
               <Image src="/images/sq.png" fluid alt="sq" />

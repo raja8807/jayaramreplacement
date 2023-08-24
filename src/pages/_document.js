@@ -5,7 +5,7 @@ export default function Document() {
     <Html lang="en">
       
       <Head />
-      <title>Institute Name</title>
+      <title>U S HEALTH ACADEMY</title>
       <body>
         <Main />
         <NextScript />

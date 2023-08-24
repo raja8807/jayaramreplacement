@@ -4,13 +4,14 @@ import { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
-import { Josefin_Sans } from "next/font/google";
+import { Josefin_Sans,Roboto,Open_Sans } from "next/font/google";
 // import Head from "next/head";
 // import { SessionProvider } from "next-auth/react";
 // import { SSRProvider } from "react-bootstrap";
 
-const josefin_Sans = Josefin_Sans({
+const josefin_Sans = Open_Sans({
   subsets: ["latin"],
+  weight:[ '300', '400', '500', '700',]
 });
 
 export default function App({ Component, pageProps }) {

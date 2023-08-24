@@ -2,6 +2,10 @@
   p {
     margin: 0;
   }
+
+  a{
+    text-decoration: none;
+  }
   .cards_wrapper {
     // height: 50px;
     background-color: $color_mid_grey;
@@ -26,7 +30,7 @@
       }
 
       .head {
-        color: #bbbbbb;
+        color: $color_dark_grey;
       }
 
       .details {

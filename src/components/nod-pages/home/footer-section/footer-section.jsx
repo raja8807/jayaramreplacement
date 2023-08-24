@@ -11,7 +11,7 @@ import {
   Youtube,
 } from "react-bootstrap-icons";
 import { COURSES, HOME_SECTIONS } from "../constants";
-import Section from "../section/section";
+
 
 const FooterSection = () => (
   <footer className={styles.footer_section}>
@@ -39,7 +39,7 @@ const FooterSection = () => (
         <Col xs={12} md={4}>
           <div className={styles.footer_items}>
             <h4>Links</h4>
-            {HOME_SECTIONS.map((section) => (
+            {HOME_SECTIONS.slice(0,-1).map((section) => (
               <Link href={`#${section.id}`} key={section.id}>
                 {section.name}
               </Link>
@@ -50,6 +50,7 @@ const FooterSection = () => (
           <div className={styles.footer_items}>
             <h4>Courses</h4>
             {COURSES.map((course) => {
+                
               return <span key={course.id}>{course.shortName}</span>;
             })}
           
@@ -66,7 +67,7 @@ const FooterSection = () => (
       </div>
       <hr />
       <div className={styles.bottom}>
-        <p>Designd By nammaoorudev.online</p>
+        <p>Designed & Maintained By <Link href='https://www.nammaoorudev.online/' target="_blank">nammaoorudev.online</Link></p>
       </div>
     </CustomContainer>
   </footer>

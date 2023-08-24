@@ -23,7 +23,7 @@
         }
         
         @include respond_above(lg){
-            grid-template-columns: repeat(4, 25%);
+            grid-template-columns: repeat(5, 20%);
 
         }
     }

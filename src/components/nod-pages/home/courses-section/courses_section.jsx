@@ -1,22 +1,22 @@
 import { Container } from "react-bootstrap";
 import styles from "./courses_section.module.scss";
 import CourseCard from "./course-card/course_card";
+import { COURSES } from "../constants";
 
 const Courses = () => {
   return (
     <div className={styles.courses_section}>
       <Container className={styles.courses}>
         <h5>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit autem
-          ratione sint doloremque enim assumenda id delectus rerum. Tenetur,
-          quaerat?
+          Explore our diverse range of courses, designed to enhance your skills
+          and knowledge. Choose from expert-led classes to enrich your learning
+          journey today!
         </h5>
 
         <div className={styles.cards}>
-            <CourseCard/>
-            <CourseCard/>
-            <CourseCard/>
-            <CourseCard/>
+          {COURSES.map((course) => (
+            <CourseCard key={course.id} courseData={course} />
+          ))}
         </div>
       </Container>
     </div>
