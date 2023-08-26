@@ -18,7 +18,7 @@ const BannerSection = () => {
       </Carousel.Item>
       <Carousel.Item>
         {/* <ExampleCarouselImage text="Second slide" /> */}
-        <Image src="/images/banner/1.jpg" fluid alt="1"/>
+        <Image src="/images/banner/3.jpg" fluid alt="1"/>
 
         <Carousel.Caption>
           {/* <h3>Second slide label</h3>
@@ -26,7 +26,7 @@ const BannerSection = () => {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-      <Image src="/images/banner/1.jpg" fluid alt="1"/>
+      <Image src="/images/banner/2.jpg" fluid alt="1"/>
 
         {/* <ExampleCarouselImage text="Third slide" /> */}
         <Carousel.Caption>

@@ -1,12 +1,18 @@
-.custom_button{
-    padding: 4px 15px;
-    outline: none;
-    border: none;
-    background-color: $color_primary;
-    color: white;
-    border-radius: 2px;
+.custom_button {
+  padding: 4px 15px;
+  outline: none;
+  border: none;
+  background-color: $color_primary;
+  color: white;
+  border-radius: 2px;
 
-    &:hover{
-        background-color: black;
+  &:disabled {
+    opacity: 0.9;
+  }
+
+  &:not(&:disabled) {
+    &:hover {
+      background-color: black;
     }
+  }
 }

@@ -44,7 +44,7 @@ const WhoAreWeSection = () => {
         <CustomContainer>
           <div className={styles.box}>
             <div className={styles.img} data-aos="flip-left">
-              <Image src="/images/sq.png" fluid alt="sq" />
+              <Image src="/images/owner.jfif" fluid alt="sq" />
             </div>
 
             <div className={styles.details}>
