@@ -8,22 +8,28 @@ const AboutCollege = () => {
 
   return (
     <CustomContainer>
-      <div className={`${styles.about_college} ${expanded && styles.expanded}`} >
+      <div className={`${styles.about_college} ${expanded && styles.expanded}`}>
         <div>
           <h4>About Our College</h4>
           <p>
-            &nbsp; &nbsp; &nbsp; &nbsp; The U S HEALTH ACADEMY, COIMBATORE AND NILGIRIS, is a private
-            institution. The college is approved by BHARAT SEVAK SAMAJ, NEW
-            DELHI.
+            &nbsp; &nbsp; &nbsp; &nbsp; The U S HEALTH ACADEMY, COIMBATORE AND
+            NILGIRIS, is a private institution. With a legacy of excellence, we
+            empower future healthcare leaders through cutting-edge courses,
+            experienced faculty, and state-of-the-art facilities. Our commitment
+            to advancing paramedical knowledge ensures that our graduates
+            thrive in this dynamic field, shaping a healthier tomorrow. Join us
+            in this journey of discovery and innovation.
+            {/* The college is approved by BHARAT SEVAK SAMAJ, NEW
+            DELHI. */}
           </p>
         </div>
         <div className={`${!expanded ? styles.notExpanded : ""}`}>
           <h4>Our Vision</h4>
           <p>
-          &nbsp; &nbsp; &nbsp; &nbsp;Our goal is to be the national leader among academic health centres
-            of Nursing and Allied Health Sciences. We are building on our
-            traditional mission of patient care, health education and research
-            by:
+            &nbsp; &nbsp; &nbsp; &nbsp;Our goal is to be the national leader
+            among academic health centres of Nursing and Allied Health Sciences.
+            We are building on our traditional mission of patient care, health
+            education and research by:
           </p>
           <ul>
             <li>
@@ -38,7 +44,7 @@ const AboutCollege = () => {
               <div className={styles.vision_item}>
                 {/* <Check2 /> */}
                 <p>
-                Educating nurses and paramedical technicians in an appropriate
+                  Educating nurses and paramedical technicians in an appropriate
                   learning environment to be efficient and safe practitioners by
                   adapting our organization to the changing environment.
                 </p>
@@ -58,13 +64,13 @@ const AboutCollege = () => {
             </li> */}
           </ul>
         </div>
-        <div className={`${!expanded ? styles.notExpanded : ""}`} >
+        <div className={`${!expanded ? styles.notExpanded : ""}`}>
           <h4>Our Mission</h4>
           <p>
-          &nbsp; &nbsp; &nbsp; &nbsp;The mission of our College of Nursing / Allied Health Sciences is to
-            provide exemplary and innovative education, research, practice,
-            service, and leadership that improves state health, national health
-            and global health.
+            &nbsp; &nbsp; &nbsp; &nbsp;The mission of our College of Nursing /
+            Allied Health Sciences is to provide exemplary and innovative
+            education, research, practice, service, and leadership that improves
+            state health, national health and global health.
           </p>
         </div>
         <small
