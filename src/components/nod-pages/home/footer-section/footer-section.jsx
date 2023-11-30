@@ -1,4 +1,4 @@
-import { Col, Row } from "react-bootstrap";
+import { Col, Image, Row } from "react-bootstrap";
 import styles from "./footer-section.module.scss";
 import CustomContainer from "@/components/ui/custom_container/custom_container";
 import Link from "next/link";
@@ -13,6 +13,7 @@ import {
 import { COURSES, HOME_SECTIONS } from "../constants";
 import { useState } from "react";
 import ContactModalPopUp from "@/components/contact-modal-popup/contact-modal-popup";
+// import Image from "react-bootstrap";
 
 const FooterSection = () => {
   const [showPopup, setShowPopup] = useState(false);
@@ -24,6 +25,10 @@ const FooterSection = () => {
         setShow={setShowPopup}
         dfeaultCourse={showPopup}
       />
+
+        <div className={styles.ad}>
+          <Image src="/images/ad.jpeg" fluid alt="ad" width={300}/>
+        </div>
 
       <footer className={styles.footer_section}>
         <CustomContainer>
@@ -38,12 +43,16 @@ const FooterSection = () => {
                   <p>Coimbatore</p>
                 </div>
                 <div>
-                  <EnvelopeAtFill />
+                  <TelephoneFill />
                   <p>+91 82483 66954</p>
                 </div>
                 <div>
-                  <TelephoneFill />
-                  <p>jayaram@ushealthacademy.online</p>
+                  <EnvelopeAtFill />
+                  <p>jrkhealth@outlook.com</p>
+                </div>
+                <div>
+                  <EnvelopeAtFill />
+                  <p>jrkhelp@outlook.com</p>
                 </div>
               </div>
             </Col>

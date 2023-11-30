@@ -60,7 +60,7 @@ const NodHeader = (props) => {
                   <EnvelopeAtFill
                     style={{ marginBottom: "4px", fontSize: "16px" }}
                   />
-                  <p>admin@jayaramplacement.online</p>
+                  <p>jrkhealth@outlook.com</p>
                 </div>
               </div>
             </div>
