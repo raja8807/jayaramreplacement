@@ -26,9 +26,7 @@ const FooterSection = () => {
         dfeaultCourse={showPopup}
       />
 
-        <div className={styles.ad}>
-          <Image src="/images/ad.jpeg" fluid alt="ad" width={300}/>
-        </div>
+      
 
       <footer className={styles.footer_section}>
         <CustomContainer>
